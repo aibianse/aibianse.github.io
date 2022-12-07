@@ -1,9 +1,9 @@
-name: "Pixiv Crawler"
+name: "Python Crawler"
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'  
+    - cron: '0 6 * * *'
   push:
   
 env:
@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: python_crawler # 改成存放图片的分支
+        ref: main # 改成存放图片的分支
     - name: Clear Previous
       run: |
         rm -f -- *.jpg
@@ -36,7 +36,7 @@ jobs:
         git config --global user.email "aibianse@outlook.com" # 改成GitHub账号的邮箱
         git add "*.jpg" "*.png" && echo "Git Added" # 参考: https://stackoverflow.com/questions/25083290/git-add-error-unknown-switch
         git commit -m 'upload pa result' && echo "Git Committed"
-        git push -u origin python_crawler && echo "Git Pushed Origin" # runner改成存放图片的分支
+        git push -u origin main && echo "Git Pushed Origin" # runner改成存放图片的分支
     - name: Failure test
       if: failure()
       run: | 
