@@ -41,7 +41,7 @@ headers = {
     'referer': 'https://www.pixiv.net/ranking.php?mode=male&content=illust',
 }
 
-path = 'M:/'
+path = './pixiv_images/'
 repeat = 1
 
 
