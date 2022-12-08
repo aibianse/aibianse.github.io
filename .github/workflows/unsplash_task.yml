@@ -22,12 +22,12 @@ jobs:
       run: |
         rm -f -- *.jpg
         rm -f -- *.png
-    - name: Setup Python environment
-      uses: actions/setup-python@v1.1.1 
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
     - name: Install Dependence
       run: pip install requests
     - name: Run python_unsplash.py
-      run: python python_unsplash.py
+      run: python3 python_unsplash.py
     - name: list
       run: ls
     - name: Upload to this repo
