@@ -1,2 +1,2 @@
-# aibianse.github.io
-https://aibianse.github.io
+Hi there 👋
+爱变色，爱分享：https://aibianse.github.io
