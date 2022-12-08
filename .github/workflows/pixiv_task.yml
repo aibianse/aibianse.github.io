@@ -14,17 +14,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          with:
-            ref: main # 改成存放图片的分支
+        with:
+          ref: main # 改成存放图片的分支
       - name: Clear Previous
-          run: |
-            rm -f -- *.jpg
-            rm -f -- *.png
+        run: |
+          rm -f -- *.jpg
+          rm -f -- *.png
 
       - name: Set up Python 3.9
-          uses: actions/setup-python@v2
-          with:
-            python-version: 3.9.15
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.15
       - name: Set timezone
         run: |
           cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -46,6 +46,6 @@ jobs:
           git push -u origin main && echo "Git Pushed Origin" # 改成存放图片的分支
       - name: Failure test
         if: failure()
-          run: |
-            ls
-            echo "Error on running!"
+        run: |
+          ls
+          echo "Error on running!"
