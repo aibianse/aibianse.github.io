@@ -3,7 +3,7 @@ import re
 
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
-    'referer': 'https://www.pixiv.net/ranking.php?mode=male&content=illust',
+    'referer': 'https://www.pixiv.net/ranking.php?mode=daily&content=illust',
 }
 
 path = './pixiv_images/'
@@ -32,7 +32,7 @@ def getSinglePic(url):
 def getAllPicUrl():
     count = 1
     for n in range(1, 2):
-        url = 'https://www.pixiv.net/ranking.php?mode=male&content=illust&p=%d&format=json' % n
+        url = 'https://www.pixiv.net/ranking.php?mode=daily&content=illust&p=%d&format=json' % n
         response = requests.get(url, headers=headers)
         illust_id = re.findall('"illust_id":(\d+?),', response.text)
         picUrl = ['https://www.pixiv.net/artworks/' + i for i in illust_id]
