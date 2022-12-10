@@ -4,7 +4,7 @@ import os
 import requests
 import re
 
-from PIL.Image import Image
+from PIL import Image
 
 time_str = datetime.datetime.now()
 print("运行的时间：" + str(time_str))
