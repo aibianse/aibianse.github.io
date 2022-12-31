@@ -1,0 +1,17 @@
+{
+	"tv_data": [{
+			"name": "Sexy Hot HD",
+			"url": "https://tv.urllista.net/live/Artur86/Artur86/61968.m3u8",
+			"image": "https://aibianse.github.io/images/sexyhot_hd.png"
+		}, {
+			"name": "Venus FHD",
+			"url": "https://tv.urllista.net/live/Artur86/Artur86/61967.m3u8",
+			"image": "https://aibianse.github.io/images/venus_fhd.png"
+		},
+		{
+			"name": "Venus HD",
+			"url": "https://tv.urllista.net/live/Artur86/Artur86/61966.m3u8",
+			"image": "https://aibianse.github.io/images/venus_hd.png"
+		}
+	]
+}
