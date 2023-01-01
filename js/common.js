@@ -5,3 +5,10 @@ function pixiv_images() {
     }
     $('#pixiv_images').html(img_html);
 }
+function xhentai_video() {
+    $.get("https://aibianse.github.io/file/xhentai_data.json", function (data) {
+        var video_url = data.video_url
+        let dom = document.getElementById('xhentai_video')
+        dom.src = video_url
+    }, "json");
+}
