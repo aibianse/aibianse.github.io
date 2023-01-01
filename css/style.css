@@ -160,7 +160,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     line-height: 1.5;
     margin: 0 0 1rem 0;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
@@ -343,7 +342,6 @@ label {
     letter-spacing: 0.2rem;
     line-height: 1.5;
     margin: 0 0 1rem 0;
-    text-transform: uppercase;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="tel"], select, textarea {
@@ -943,7 +941,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
     padding: 0 1.25rem 0 1.35rem;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     white-space: nowrap;
 }
 
@@ -1204,7 +1201,6 @@ body.is-loading #bg:before {
 }
 
 #header .content p {
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     line-height: 2;
@@ -1239,7 +1235,6 @@ nav ul li a {
     height: 2.75rem;
     line-height: 2.75rem;
     padding: 0 1.25rem 0 1.45rem;
-    text-transform: uppercase;
     letter-spacing: 0.2rem;
     font-size: 0.8rem;
     border-bottom: 0;
@@ -1511,7 +1506,6 @@ article .close:before {
     font-size: 0.6rem;
     opacity: 0.75;
     margin-bottom: 0;
-    text-transform: uppercase;
 }
 
 body.is-article-visible #footer {
