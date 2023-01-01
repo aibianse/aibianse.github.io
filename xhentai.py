@@ -22,7 +22,7 @@ if response.status_code == 200:
     print(response_code)
     if response_code == 206 or response_code == 200:
         data_json = {"video_url": url}
-        file_path = './pixiv_images/data.json'
+        file_path = './file/xhentai_data.json'
         with open(file_path, 'w') as f:
             json.dump(data_json, f)
             print('写入成功')
