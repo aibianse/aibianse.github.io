@@ -22,14 +22,16 @@ for n in range(1, 2):
     url = 'https://www.pixiv.net/ranking.php?mode=daily_r18&content=manga&p=%d&format=json' % n
     response = requests.get(url, headers=headers)
     illust_id = re.findall('"illust_id":(\d+?),', response.text)
+    title = response.json()["contents"][0]["title"]
+    print(title)
+    page_num = response.json()["contents"][0]["illust_page_count"]
+    print("总共：", page_num)
     picUrl = ['https://www.pixiv.net/artworks/' + illust_id[0]]
+    print(picUrl)
     for url in picUrl:
         response = requests.get(url, headers=headers)
         picture = re.search('"original":"(.+?)"},"tags"', response.text)
-        page_count = re.search('"pageCount":(.+?),"isBookmarkable"', response.text)
-        url_txt = picture.group(0).split(illust_id[0]+'p0')
-        print("总共：", page_count.group(0))
-        for index in range(0, int(page_count.group(1))-1):
+        for index in range(0, int(page_num)):
             image_url = picture.group(1).replace('p0', 'p'+str(index))
             pic = requests.get(image_url, headers=headers)
             file_path = path + str(index) + '.jpg'
