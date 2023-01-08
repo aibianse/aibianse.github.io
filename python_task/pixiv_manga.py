@@ -27,8 +27,8 @@ for n in range(1, 2):
         response = requests.get(url, headers=headers)
         picture = re.search('"original":"(.+?)"},"tags"', response.text)
         page_count = re.search('"pageCount":(.+?),"isBookmarkable"', response.text)
-        url_txt = picture.group(1).split(illust_id[0]+'p0')
-        print("总共：", page_count.group(1))
+        url_txt = picture.group(0).split(illust_id[0]+'p0')
+        print("总共：", page_count.group(0))
         for index in range(0, int(page_count.group(1))-1):
             image_url = picture.group(1).replace('p0', 'p'+str(index))
             pic = requests.get(image_url, headers=headers)
