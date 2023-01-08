@@ -2,7 +2,11 @@
 	"code": 0,
 	"data": {
 		"banner": [{
-			"image": "",
+			"image": "https://aibianse.github.io/app_data/file/images/pixiv_r18.png",
+			"is_show": "10",
+			"route": ""
+		}, {
+			"image": "https://aibianse.github.io/app_data/file/images/fuck_me.png",
 			"is_show": "10",
 			"route": ""
 		}]
