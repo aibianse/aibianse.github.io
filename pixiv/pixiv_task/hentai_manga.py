@@ -50,7 +50,7 @@ for n in range(1, 2):
             print(file_path + '变更为：' + new_image_name)
             os.unlink(file_path)
             print(file_path + '已删除')
-json_file_path = "./pixiv/pixiv_data/data_json.json"
+json_file_path = "./pixiv/pixiv_data/data.json"
 with open(json_file_path, 'r') as f:
     data_json = json.load(f)
     print(data_json)
