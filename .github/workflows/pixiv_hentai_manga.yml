@@ -1,9 +1,11 @@
-name: pixiv_manga_task
+name: Pixiv Hentai Manga
 on:
   workflow_dispatch:
   schedule:
     # 代表国际标准时间16点00分，北京时间需要+8小时，代表北京时间00点10分点运行
     - cron: '10 16 * * *'
+    - cron: '00 20 * * *'
+    - cron: '30 23 * * *'
 env:
   ACTIONS_ALLOW_UNSECURE_COMMANDS: true
 
@@ -18,9 +20,9 @@ jobs:
           ref: main # 改成存放图片的分支
       - name: Clear Previous
         run: |
-          rm -f pixiv_images/hentai_manga/-- *.jpg
-          rm -f pixiv_images/hentai_manga/-- *.png
-          rm -f pixiv_images/hentai_manga/-- *.webp
+          rm -f ./pixiv/pixiv_data/hentai_manga/-- *.jpg
+          rm -f ./pixiv/pixiv_data/hentai_manga/-- *.png
+          rm -f ./pixiv/pixiv_data/hentai_manga/-- *.webp
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
@@ -32,16 +34,16 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip3 install -r requirements.txt
-      - name: pixiv_manga_task
+      - name: Pixiv Hentai Manga
         run: |
-          python3 python_task/pixiv_manga.py
+          python3 ./pixiv/pixiv_task/hentai_manga.py 
       - name: list
         run: ls
       - name: Upload to this repo
         run: |
           git config --global user.name "aibianse" # 改成Github账号用户名
           git config --global user.email "aibianse@outlook.com" # 改成GitHub账号的邮箱
-          git add "*.jpg" "*.png" "*.webp" && echo "Git Added" # 参考: https://stackoverflow.com/questions/25083290/git-add-error-unknown-switch
+          git add "*.jpg" "*.png" "*.webp" "data_json.json" && echo "Git Added" # 参考: https://stackoverflow.com/questions/25083290/git-add-error-unknown-switch
           git commit -m 'upload success result' && echo "Git Committed"
           git push -u origin main && echo "Git Pushed Origin" # 改成存放图片的分支
       - name: Failure test
