@@ -55,7 +55,7 @@ with open(json_file_path, 'r') as f:
     data_json = json.load(f)
     print(data_json)
 data_json["data"]["manga"]["name"] = title
-data_json["data"]["manga"]["url"] = all_url
+data_json["data"]["manga"]["urls"] = all_url
 with open(json_file_path, 'w') as f:
     f.write(json.dumps(data_json, ensure_ascii=False))
-    print('写入成功')
+    print(f'写入成功：{data_json}')
