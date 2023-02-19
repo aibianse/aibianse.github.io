@@ -16,7 +16,7 @@ headers = {
     'cookie': 'first_visit_datetime_pc=2022-12-08+21%3A09%3A15; p_ab_id=9; p_ab_id_2=6; p_ab_d_id=661508789; yuid_b=OJFnVwc; _fbp=fb.1.1670501357542.1614410069; _gid=GA1.2.255579329.1670501362; device_token=250874b4bfef948b82258a6f562c51ac; c_type=25; privacy_policy_notification=0; a_type=0; b_type=0; QSI_S_ZN_5hF4My7Ad6VNNAi=v:0:0; login_ever=yes; _gcl_au=1.1.1002121055.1670501461; p_b_type=1; privacy_policy_agreement=5; adr_id=A1qvvwp4UXtcmiMiy6kDRmi92CayII68W2hvh4I5sEiX5vQv; __cf_bm=7dKU7mcJXV4zrl1MVq1nMLxEvnvkd7Pj5QTq95w0mvE-1670640376-0-Ad/Qxr4pV2jpGfqhlEqviN2VUMN3V7lrpReOzONQbCIxIHh6d5FtbTsvplDMVcyCn9/FS5+YViI1QO1RMIL5axzk8fcPMO9zhE1RqCQYDQOGGcJ4e4Gz+BvNlCL15I3Fxn95iNP+QUNXPVkk4bGknhIrI3f9+d1lRWT3g1S1z5zjz7R03gFNw1UJc+kNf9nECJ9qXqS0xzemNod3OMjzBrk=; _gat_UA-1830249-3=1; _gat_gtag_UA_76252338_1=1; PHPSESSID=41658296_2pvJ65yz8O1QB2LHi4dtIHnv5B3GMCew; _gat_UA-76252338-1=1; _ga_MZ1NL4PHH0=GS1.1.1670640377.4.1.1670640390.0.0.0; cto_bundle=NftArF9NT1BIaFolMkZnOWVpRHhlZUE2RU43eEdIems4SmlQN0ZEM2FLNDIzZ1BFSzE5bEdlN1pLZWM4d1dha0VRdUMwZUd0aGxiT2lyUWpCakdLajU3YVdiJTJCVmNGZGpBaUZ4Y1BJbG5SbWRRaTY1MGEzbnN3NVlJc0h2eVJVUE9tYXlwY1ptcHJQS2MwbWFvQlY5NEdTb21kN1l3JTNEJTNE; tag_view_ranking=0xsDLqCEW6~QYP1NVhSHo~q_J28dYJ9d~UBwhLy7Ngq~uC2yUZfXDc~MM6RXH_rlN~_3oeEue7S7~NdfHurJT-D~vdbd7LdFLQ~mFSBCiWDC6~CkDjyRo6Vc~B6j4W_zFZ3~KMpT0re7Sq~Wxk4MkYNNf~gCB7z_XWkp~_hSAdpN9rx~hbWCq8Ok4w~nP0KNyaoTX~8buMDtT-ku~4gzX-RNalt~GmCzj7c06U~1HSjrqSB3U~DTDROgLuzO~azESOjmQSV~By--nS9m_2~DXPphy6Z-6~jH0uD88V6F; _ga_75BBYNYN9J=GS1.1.1670640372.6.1.1670640424.0.0.0; _ga=GA1.1.920080660.1670501357',
 }
 
-path = './pixiv_images/hentai_manga/'
+path = './pixiv/pixiv_data/hentai_manga/'
 repeat = 1
 count = 1
 all_url = []
