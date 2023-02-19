@@ -7,6 +7,7 @@ function pixiv_hentai_illust() {
 }
 function pixiv_hentai_manga() {
     $.get("https://aibianse.github.io/pixiv/pixiv_data/data.json", function (data) {
+        console.log(data)
         var urls = data.urls
         var img_html = '';
         for (var i = 0; i <= urls.length; i++) {
