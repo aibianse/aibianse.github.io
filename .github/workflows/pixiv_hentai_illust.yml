@@ -20,9 +20,9 @@ jobs:
           ref: main # 改成存放图片的分支
       - name: Clear Previous
         run: |
-          rm -f -- *.jpg
-          rm -f -- *.png
-          rm -f -- *.webp
+          rm -f ./pixiv/pixiv_data/hentai_illust/-- *.jpg
+          rm -f ./pixiv/pixiv_data/hentai_illust/-- *.png
+          rm -f ./pixiv/pixiv_data/hentai_illust/-- *.webp
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
