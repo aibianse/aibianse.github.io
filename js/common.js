@@ -7,9 +7,7 @@ function pixiv_hentai_illust() {
 }
 function pixiv_hentai_manga() {
     $.get("https://aibianse.github.io/pixiv/pixiv_data/data.json", function (data) {
-        console.log(data.manga)
-        console.log(data.manga.urls)
-        var urls = data.manga.urls
+        var urls = data.data.manga.urls
         var img_html = '';
         for (var i = 0; i <= urls.length; i++) {
             img_html += '<img class="nya-btn hot badge" src="' + urls[i] + '" referrerpolicy="no-referrer" alt="爱变色Pixiv Hentai Manga"/></br>';
