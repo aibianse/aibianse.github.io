@@ -83,12 +83,24 @@
 	
 	<script>
 		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?a152b6ed71fe927def9b534096bb81ef";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
+		(function () {
+		  const hm = document.createElement('script')
+  hm.src = 'https://hm.baidu.com/hm.js?a152b6ed71fe927def9b534096bb81ef'
+  const s = document.getElementsByTagName('script')[0]
+  s.parentNode.insertBefore(hm, s)
+})()
+	</script>
+	<script>
+		(function () {
+		  const redirect = localStorage.getItem('path')
+  if (redirect) {
+		    localStorage.removeItem('path')
+		const segments = redirect.split('/')
+		const repo = segments[1]
+		if (window.location.pathname.split('/')[1] === repo)
+		      window.history.replaceState(null, null, redirect)
+  }
+		})()
 	</script>
 </body>
 
