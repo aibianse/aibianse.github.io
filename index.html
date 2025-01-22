@@ -9,7 +9,18 @@
 	<meta name="keywords" content="爱变色,美图秀,图片,全裸,半裸,美胸,美臀,ACG,黑丝,白丝,女同,少女,诱惑,写真,ACG百合,瞄人缝,唯美,JK,绝对领域,国外Cosplay,美腿,原神,套图">
 	<meta name="description" content="收集各种精选美图，分享令人心动的遐想时光！">
 	<title>爱变色</title>
-  <script type="module" crossorigin src="/aibianse/assets/index-7654caff.js"></script>
+	<script>
+		(function() {
+			// 检查是否有重定向
+			let redirect = sessionStorage.redirect;
+			delete sessionStorage.redirect;
+			if (redirect && redirect !== location.href) {
+				// 保持原有的 URL 状态
+				history.replaceState(null, null, redirect);
+			}
+		})();
+	</script>
+  <script type="module" crossorigin src="/aibianse/assets/main-8313ec27.js"></script>
   <link rel="stylesheet" href="/aibianse/assets/index-78f08b23.css">
 </head>
 
